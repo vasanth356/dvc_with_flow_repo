@@ -25,7 +25,7 @@ import dvc.api
 
 path = r'data\winequality-red.csv'
 repo = r'C:\Users\LENOVO\PycharmProjects\dvc_with_flow_repo'
-version = 'version3'
+version = 'version4'
 
 data_url =  dvc.api.get_url(
     path = path,
