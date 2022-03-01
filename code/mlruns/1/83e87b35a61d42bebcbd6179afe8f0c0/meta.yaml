@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/LENOVO/PycharmProjects/dvc_with_flow_repo/code/mlruns/1/83e87b35a61d42bebcbd6179afe8f0c0/artifacts
+end_time: 1646139521718
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 83e87b35a61d42bebcbd6179afe8f0c0
+run_uuid: 83e87b35a61d42bebcbd6179afe8f0c0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1646139521630
+status: 4
+tags: []
+user_id: LENOVO
