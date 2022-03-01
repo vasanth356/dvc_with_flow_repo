@@ -23,9 +23,9 @@ from mlflow.tracking import MlflowClient
 
 import dvc.api
 
-path = 'data/winequality-red.csv'
-repo = '/home/ciuser/dvc_with_mlflow'
-version = 'v1'
+path = r'data\winequality-red.csv'
+repo = r'C:\Users\LENOVO\PycharmProjects\dvc_with_flow_repo'
+version = 'version2'
 
 data_url =  dvc.api.get_url(
     path = path,
@@ -33,7 +33,7 @@ data_url =  dvc.api.get_url(
     rev = version
     )
 
-mlflow.set_experiment ('dvc with flow')
+mlflow.set_experiment ('dvc_with_flow_2')
 
 
 def get_data():
@@ -67,8 +67,8 @@ if __name__ == "__main__":
 
     with mlflow.start_run():
         client = MlflowClient()
-        alpha = 0.75
-        l1_ratio=0.75
+        alpha = 1
+        l1_ratio=1
         
         lr = ElasticNet(alpha=alpha, l1_ratio=l1_ratio, random_state=42)
         lr.fit(train_x, train_y)
@@ -93,4 +93,3 @@ if __name__ == "__main__":
         
         # mlflow model logging 
         mlflow.sklearn.log_model(lr, "model")
- 
